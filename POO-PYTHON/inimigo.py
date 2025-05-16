@@ -62,11 +62,11 @@ class Inimigo:
         else:
             self.atacar(personagem)
 
-# Criando personagens
-kayk = Personagem("kayk", 2, 20, 100)
-aranha = Inimigo("aranha", 1, 10, 50)
 
-# Exemplo de combate
+kayk = Personagem("kayk", 2, 20, 100)
+globin = Inimigo("globin", 1, 10, 50)
+dragão = Inimigo("dragão", 4, 10, 50)
+paulista = Inimigo("paulista", 10, 10, 50)
 kayk.mostrar_status()
 kayk.atacar(aranha)
 kayk.atacar(aranha)
