@@ -1,5 +1,5 @@
-from barbearia_inserir import ver, inserir
-from barbearia_conexao import banco
+from staup import ver, inserir
+from atividasdes.projeto_barbearia.db import banco
 banco = banco()
 clientes = []
 
@@ -17,10 +17,6 @@ while True:
         }
         clientes.append(cliente)
         inserir(banco,cliente['nome'],cliente['cpf'],cliente['idade'])
-    elif opcao == '2':
-        verificar = ver(banco)
-        if verificar == resul:
-        
 
    
     

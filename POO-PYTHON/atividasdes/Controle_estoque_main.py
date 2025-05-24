@@ -1,5 +1,5 @@
 
-from controle_estoque_coments import inserir
+from atividasdes.controle_estoque_coments import inserir
 try:
     while True: 
         produtos = []
