@@ -13,21 +13,24 @@ class Produto:
         cur.execute(sql,(self.nome_produto,self.descricao,self.catecoria,self.quantidade,self.data_saida))
         db.commitar()
         db.fechar()
+        print('cliente inserido')
     def somar():
         pass
     def menos():
         pass 
-    def ver_todos(self):
+    @classmethod
+    def ver_todos(cls):
         db = banco()
         cur = db.iniciar_cursor()
         sql = 'select * from produto'
-        cur.execute(sql,)
+        cur.execute(sql)
         resuldado = cur.fetchall()
         for (id,nome_produto,descricao,catecoria,quantidade,data_saida) in resuldado:
-            print(f'{'-'*20}')
-            print(f'id {id}\n nome: {nome_produto}\n descrição {descricao} \n catecoria: {catecoria} \n quantidade: {quantidade} \n data de saida: {data_saida}')
-            db.fechar()
-    def ver_especifico(self,nome):
+            print(f"{'-'*20}")
+            print(f'id: {id}\nNome: {nome_produto}\nDescrição: {descricao}\nCategoria: {catecoria}\nQuantidade: {quantidade}\nData de saída: {data_saida}')
+        db.fechar()
+    @classmethod
+    def ver_especifico(cls,nome):
         db = banco()
         cur = db.iniciar_cursor()
         sql = 'select * from produto where nome_produto = ?'
@@ -36,31 +39,31 @@ class Produto:
         for (id,nome_produto,descricao,catecoria,quantidade,data_saida) in resuldado:
             print(f'{'-'*20}')
             print(f'id {id}\n nome: {nome_produto}\n descrição {descricao} \n catecoria: {catecoria} \n quantidade: {quantidade} \n data de saida: {data_saida}')
-            id_gerado = cur.lastrowid()
+            id_gerado = cur.lastrowid
             return id_gerado
-            
-    def deletar(self,id_gerado):
+    @classmethod
+    def unico(cls,nome):
         db = banco()
         cur = db.iniciar_cursor()
-        sql = 'delete * from produto where id = ?'
-        cur.execute(sql,(id_gerado,))
-        resuldado = cur.fetchall()
-        for (id,nome_produto,descricao,catecoria,quantidade,data_saida) in resuldado:
-            print(f'{'-'*20}')
-            print(f'id {id}\n nome: {nome_produto}\n descrição {descricao} \n catecoria: {catecoria} \n quantidade: {quantidade} \n data de saida: {data_saida}')
-            
+        sql = 'select * from produto where nome_produto = ?'
+        cur.execute(sql,(nome,))
+        
+    
+    @classmethod       
+    def deletar(cls,nome):
+        db = banco()
+        cur = db.iniciar_cursor()
+        sql = 'delete from produto where nome_produto = ?'
+        cur.execute(sql,(nome,))
+        db.commitar()
+        print(f'O prroduto {nome} foi deletado')
+    @classmethod
+    def update(cls,opcao,nova,mudaca):
+        db = banco()
+        cur = db.iniciar_cursor()
+        sql = f'update produto set {opcao} = ? where nome_produto = ?'
+        cur.execute(sql,(nova,mudaca,))
+        db.commitar()
+        
 
 
-
-
-
-
-
-
-
-k = Produto('caio','lindo','hetero',12,'2020-05-05')
-k.inserir_produto_novo()
-k.ver_especifico(')
-
-
-               

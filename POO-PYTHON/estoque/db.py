@@ -4,11 +4,12 @@ class banco:
         try: 
             self.conn = mariadb.connect(
                 user='root',
-                password='',
+                password=' ',
                 host='localhost',
                 port=3306,
-                database='Estoque'
+                database='estoque'
             )
+            print('deu cerrto')
         except mariadb.Error as e:
             print('erro na conexão com o banco de dados:', e) 
     def iniciar_cursor(self):
