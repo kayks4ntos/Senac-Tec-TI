@@ -1,0 +1,38 @@
+        body{
+            background-image: url('fundo_predo.jpg');
+            
+        }
+        h1 {
+            
+            font-size: 50px;
+            color: white;
+            background-image: url(comunismo.jpg);
+            background-repeat: no-repeat;
+            
+        }
+        h2 {
+            font-size: 100px;
+            color: black;
+            box-shadow:black 50px;
+        }
+
+        h3{
+            font-size: 50;
+            color: blue;
+        }
+        p {
+            font-size: 50px;
+            color: green;
+        }
+        hr {
+            size: 600px;
+            color: aqua;
+            
+        }
+        h1:hover {
+            color: rgb(2, 129, 2);
+        
+        }
+        pre{
+            background-color: rgb(168, 13, 60);
+        }
