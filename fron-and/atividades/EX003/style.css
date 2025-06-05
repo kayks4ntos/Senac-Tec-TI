@@ -1,15 +1,8 @@
-        body{
-            background-image: url('fundo_predo.jpg');
+        body {
+            background-image: url(Naruto\ Chidori\ GIF\ by\ BANDAI\ NA);
             
-        }
-        h1 {
+        }    
             
-            font-size: 50px;
-            color: white;
-            background-image: url(comunismo.jpg);
-            background-repeat: no-repeat;
-            
-        }
         h2 {
             font-size: 100px;
             color: black;
@@ -30,9 +23,48 @@
             
         }
         h1:hover {
-            color: rgb(2, 129, 2);
+            color: rgb(17, 3, 204);
         
         }
         pre{
             background-color: rgb(168, 13, 60);
+        }
+        tr {
+            color: whitesmoke;
+            border: 10px solid tomato
+        }
+        title {
+            border: 10px solid tomato;
+        }
+        th{
+            border: 10px solid tomato
+
+        }
+        ul {
+            color: white;
+            }
+        .img2{
+            display: none;
+        }
+        
+       .conteiner_imagem:hover .img1 {
+            display: none;
+            background-color: rgb(116, 114, 108);
+}
+
+        .conteiner_imagem:hover .img2 {
+            display: block;
+            background-color: rgb(116, 114, 108);
+}
+        .tabela {
+            color: green;
+            font-family: "Bungee", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+        }
+        .texto {
+            font-family: "Bungee", sans-serif;
+            font-weight: 400;
+            font-style: normal;
         }
