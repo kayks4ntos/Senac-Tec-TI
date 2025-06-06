@@ -1,70 +1,58 @@
-        body {
-            background-image: url(Naruto\ Chidori\ GIF\ by\ BANDAI\ NA);
-            
-        }    
-            
-        h2 {
-            font-size: 100px;
-            color: black;
-            box-shadow:black 50px;
-        }
-
-        h3{
-            font-size: 50;
-            color: blue;
-        }
-        p {
-            font-size: 50px;
-            color: green;
-        }
-        hr {
-            size: 600px;
-            color: aqua;
-            
-        }
-        h1:hover {
-            color: rgb(17, 3, 204);
-        
-        }
-        pre{
-            background-color: rgb(168, 13, 60);
-        }
-        tr {
-            color: whitesmoke;
-            border: 10px solid tomato
-        }
-        title {
-            border: 10px solid tomato;
-        }
-        th{
-            border: 10px solid tomato
-
-        }
-        ul {
-            color: white;
-            }
-        .img2{
-            display: none;
-        }
-        
-       .conteiner_imagem:hover .img1 {
-            display: none;
-            background-color: rgb(116, 114, 108);
+.amarelo{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 1769px;
+    right: 0px;
+    bottom: 0px;
 }
-
-        .conteiner_imagem:hover .img2 {
-            display: block;
-            background-color: rgb(116, 114, 108);
+.verde{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    transform: translate(0%,-0%);
 }
-        .tabela {
-            color: green;
-            font-family: "Bungee", sans-serif;
-            font-weight: 400;
-            font-style: normal;
+.vermelho{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0pxPX;
+    left: 1769px;
+    right: 0px;
+    bottom: 0px;
+    transform: translate(-100%,-0%);
+}
+.blue{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0pXpx;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    transform: translate(0%,-100%);
+}
+.roxo{
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
 
-        }
-        .texto {
-            font-family: "Bungee", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-        }
+}
+.roxo:hover{
+    background-color: burlywood;
+ 
+}
