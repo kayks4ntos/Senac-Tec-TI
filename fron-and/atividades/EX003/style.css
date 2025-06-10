@@ -1,15 +1,30 @@
 body {
-    background: linear-gradient(to right, #7a2acfb4, #703b9b);
+      border-radius: 90%;
+      background: radial-gradient(circle, rgb(141, 13, 141), purple, #1a001f);
+      
+    }
+
     
     
 
     
 }
-.titulo{
-    font-size: x-large;
+@font-face {
+  font-family: 'NarutoFont';
+  src: url('fonts/njnaruto.ttf') format('truetype');
 }
+
+/*  titulo */
+.titulo{
+    font-family: 'NarutoFont', sans-serif;
+    font-size: x-large;
+
+
+}
+
+
 #apresentacao {
-    background:linear-gradient(to right,#6a11cb,#2575fc);
+    background:linear-gradient(to right,#66408F,#7929CF);
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     size: 20px;
@@ -35,12 +50,13 @@ body {
     transform: translate(-50%,-50%);
 
 }
+/*--------menu----------------------------------*/
 #menu{
     background: linear-gradient(to left, #f8f0ff, #b388eb);
-    color: rgb(8, 123, 190);
+    color: #4F1669;
     width: 75%;
     height: 10%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-family: 'NarutoFont', sans-serif;
     font-size: x-large;
     position: absolute;
     text-align: center;
@@ -52,49 +68,68 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 #i{ 
-    position:absolute;
-    left: 12%;
-    top: 14%;
-    transform: translate(-12%,-14%);
-    border-radius: 8px;
+    position: absolute;
+    left: 20%;
+    top: 26%;
+    transform: translate(-50%,-50%);
+    
 
 }
 #c{
-    position:absolute;
-    left: 24%;
-    top: 14%;
-    transform: translate(-12%,-14%);
-    border-radius: 8px;
-
-
+    position: absolute;
+    left: 80%;
+    top: 26%;
+    transform: translate(-50%,-50%);
 }
 #s{
-    position:absolute;
-    left: 31%;
-    top: 14%;
-    transform: translate(-12%,-14%);
-    border-radius: 8px;
-
-
+    position: absolute;
+    left: 60%;
+    top: 26%;
+    transform: translate(-50%,-50%);
 }
 #see{
-    position:absolute;
-    left: 57%;
-    top: 14%;
-    transform: translate(-12%,-14%);
-    border-radius: 8px;
+    position: absolute;
+    left: 80%;
+    top: 26%;
+    transform: translate(-50%,-50%);
+}
+#c{
+    position: absolute;
 
+    left: 40%;
+    top: 26%;
+    transform: translate(-50%,-50%);
 
 }
-#c{position:absolute;
-    left: 84%;
-    top: 14%;
-    transform: translate(-12%,-14%);
-    border-radius: 8px;
-    right: ;
-
-
+#menu img{
+    position: absolute;
+    left: 50%;
+    top: 49%;
+    transform: translate(-50%,-50%);
+    width: 80px;
+    height: 80px;
 }
+#menu #sha{
+    position: absolute;
+    left: 50%;
+    top: 49%;
+    transform: translate(-50%,-50%);
+    width: 80px;
+    height: 80px;
+}
+#menu:hover {
+    color: black;
+    background: linear-gradient(to left, #d34646, #6b1616);
+    transition: 3s;
+    
+}
+#menu:hover #rec{
+
+    transition: 20s;
+    display: none;
+    
+}
+/*----------conteudo----------------------*/
 #conteudo{
     background: linear-gradient(to left, #f8f0ff, #b388eb);
 
@@ -141,11 +176,11 @@ body {
     background: linear-gradient(to right, #8765ac9a, #adcad8b9);
     text-align: center;
     color: rgb(0, 0, 0);
-    width: 75%;
+    width: 76%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position:absolute;
     top: 128%;
-    left: 50%;
+    left: 51%;
     transform: translate(-50%,-50%);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
