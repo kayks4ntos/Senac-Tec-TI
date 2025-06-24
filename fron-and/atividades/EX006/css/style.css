@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(189, 44, 44);
+}
+.writer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(197, 48, 48);
+    height: 100vh;
+}
+.conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 35vh;
+    background-color: red;
+    flex-direction: column;
+
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: black;
+    color: white;
+
+    
+    
+}
+
+.dois{
+    flex-grow: 1;
+    background-color: aqua;
+    color: black;
+}
+.quatro{
+    flex-grow: 1;
+    background-color: aqua;
+    color: black;
+}
+.k .item{
+    width: 600px;
+
+    
+}
+.seis{
+    
+}
+
