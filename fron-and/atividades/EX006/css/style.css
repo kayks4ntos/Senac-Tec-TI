@@ -4,53 +4,159 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(189, 44, 44);
+    background: linear-gradient(45deg, rgba(0, 174, 255, 0.356) 20%, #3a65ff9c 30%, white 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.writer{
+.conteiner{
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.navbar{
+    display: flex;
+    height: 15vh;
+    width: 100vw;
+    
+}
+#menu{
+    display: flex;
+    width: 100vw;
+    margin-top: 5vh;
+    margin-left: 8vh;
+    margin-right: 8vh;
+    justify-content: space-between;
+    
+    
+}
+#menu li{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.a{
+    flex-grow: 1;
+}
+#e{
+    margin-right: 2vh;
+}
+#f{
+    margin-right: 2vh;
+
+}
+.linha{
+    display: flex;
+    margin: 10vh;
+    justify-content: space-between;
+}
+.conteudo{
+    font-size: 2.5rem;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: rgb(197, 48, 48);
-    height: 100vh;
+    background-color: rgba(137, 43, 226, 0);
+    width: 80vh;
+    height: 80vh;
+    padding: 5vh;
+
+
 }
-.conteiner{
+.primeiro{
+    color: rgba(0, 0, 0, 0.651);
+    font-size: 1.5rem;
+}
+.conteudo p{
+    font-size: 1.5rem ;
+}
+.portifolio{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 35vh;
-    background-color: red;
     flex-direction: column;
-
+    gap: 5px;
+    padding: 5vh;
+    background-color: rgba(252, 252, 252, 0.164);
+    width: 80vh;
+    height: 80vh;
+    border-radius: 4%;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.26);
 }
-
-.item{
-    display: flex;
+.portifolio #valor{
+    font-size: 4rem;
+}
+.portifolio img{
     justify-content: center;
     align-items: center;
-    height: 50px;
-    background-color: black;
-    color: white;
-
-    
-    
+    width: 70%;
+    height: auto;
 }
-
-.dois{
+.portifolio h1{
+    font-size: 2rem;
     flex-grow: 1;
-    background-color: aqua;
-    color: black;
 }
-.quatro{
-    flex-grow: 1;
-    background-color: aqua;
-    color: black;
-}
-.k .item{
-    width: 600px;
+.portifolio .primeiro{
+    font-size: 1rem;
 
-    
 }
-.seis{
-    
+@media (max-width:600px){
+    .conteiner{
+        height: 100%;
+        width: 100%; 
+
+    }
+    #menu{
+        margin-top: 2rem;
+        margin-left: 0;
+        margin-right: 0;
+        gap: 7px;
+        font-size: 1rem;
+        flex-wrap: wrap;
+    }
+    .fim{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .linha{
+        flex-wrap: wrap;
+    }
+    .linha{
+        margin-top: 2rem;
+        margin-left: 0;
+        gap: 20px;
+    }
+    .conteudo{
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100vw;
+        height: 100vh;
+        
+    }
+    .primeiro{
+        font-size: 0.5rem;
+    }
+    .conteudo p{
+        font-size: 1.2rem ;
+    }
+    .portifolio{
+        flex-wrap: wrap;
+        gap: 50px;
+
+
+    }
+    .portifolio #valor{
+    font-size: 3rem;
+}
+    .portifolio h1{
+        font-size: 2rem;
+        flex-grow: 0;
 }
 
+
+
+
+
+
+}
