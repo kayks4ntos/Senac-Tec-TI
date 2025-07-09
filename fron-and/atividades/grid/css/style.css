@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.conteiner {
+    display: grid;
+    background-color: black;
+    height: 100vh;
+    grid-template-rows: 6% 94%;
+    row-gap: 2%;
+
+}
+.nav {
+    grid-column: 1/2;
+    
+
+
+    
+}
+#nav-1{
+    padding: 3%;
+    height: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+}
+#login {
+   
+}
+.conteudo{
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    background-color: rgb(0, 0, 0);
+    margin: 1.5%;
+    column-gap: 1%;
+}
+.interacao{
+    background-color: rgba(31, 31, 31, 0.37);
+    display: grid;
+    grid-template-rows: 5% 18% 18%;
+    border-radius: 3%;
+    color: white;
+    padding: 3%;
+    row-gap: 3%;
+}
+#bibliotaca{
+    display: grid;
+    grid-template-columns:90% 1fr ;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+.play{
+    padding: 4%;
+    background-color: rgba(19, 19, 19, 0.795);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 4%;
+    border-radius: 4%;
+}
+#mais{
+    display: grid;
+    align-items: end;
+}
+
+.musica{
+    color: white;
+    padding: 3%;
+    border-radius: 3%;
+    grid-column: 2;
+    background: linear-gradient(
+    to bottom,#000000 0%, #111111 30%, #1a1a1ab7 60%, #2626264d 100%
+  );
+    display: grid;
+    grid-template-rows: 8% 1fr 1fr 1fr;
+
+}
+#barra{
+    display: grid;
+    grid-template-columns:90% 1fr ;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.linhas_musica {
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1rf;
+    justify-items: center;
+    align-items: center; 
+    
+
+}
+.linhas_musica img{
+    width: 100px;
+    height: 100px; 
+}
+button{ 
+    background: transparent;
+    border: none;
+    color: white;
+    
+}
+input{
+    width: 100%;
+  padding: 10px 15px;
+  border: 2px solid #1db95400; /* verde estilo Spotify */
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  background-color: #121212; /* fundo escuro */
+  color: white;
+  transition: all 0.3s ease;
+    
+}
