@@ -1,21 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size:medium;
 }
+
 .conteiner {
     display: grid;
     background-color: black;
     height: 100vh;
     grid-template-rows: 6% 94%;
     row-gap: 2%;
+    
 
 }
 .nav {
     grid-column: 1/2;
-    
-
-
     
 }
 #nav-1{
@@ -40,33 +42,36 @@
     align-items: center;
 
 }
-.bloco img{
-    width: 35px;
+.bloco i{
+    width: 40px;
     height: auto;
 }
 #login {
     
     
+    
 }
 #login-1{
     background-color: white;
-    border-radius: 15px ;
+    border-radius: 25px ;
     color: black;
-    width: 70px;
-    height: 30px;
+    width: 100px;
+    height: 50px;
+    font-size: larger;
 }
 #sing{
+    font-size: larger;
     
 }
 .conteudo{
     display: grid;
-    grid-template-columns: 30% 1fr;
+    grid-template-columns: 28% 1fr;
     background-color: rgb(0, 0, 0);
     margin: 1.5%;
     column-gap: 1%;
 }
 .interacao{
-    background-color: rgba(31, 31, 31, 0.516);
+    background-color: rgba(31, 31, 31, 0.349);
     display: grid;
     grid-template-rows: 5% 18% 18%;
     border-radius: 3%;
@@ -82,7 +87,7 @@
 }
 .play{
     padding: 4%;
-    background-color: #262626cc;
+    background-color: #26262636;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 4%;
@@ -98,8 +103,7 @@
     padding: 3%;
     border-radius: 3%;
     grid-column: 2;
-    background: linear-gradient(
-    to bottom,#262626cc  0%, #111111 30%, #1a1a1ab7 60% , black 100%
+    background: linear-gradient(to bottom,#1a1919cc  0%, #000000 40%, #000000e1 60% , black 100%
   );
     display: grid;
     grid-template-rows: 8% 1fr 1fr 1fr;
@@ -114,7 +118,7 @@
 
 .linhas_musica {
     display: grid;
-    grid-template-columns: 1fr  1fr 1fr 1fr 1fr 1fr;
+    
     grid-template-rows: 1rf;
     justify-items: center;
     align-items: center; 
@@ -122,8 +126,11 @@
 
 }
 .linhas_musica img{
-    width: 100px;
-    height: 100px; 
+    width: 200px;
+    height: 200px;
+    border-radius: 7px;
+    transition: 500ms;
+    
 }
 button{ 
     background: transparent;
@@ -143,3 +150,15 @@ input{
   transition: all 0.3s ease;
     
 }
+.linha{
+    display: flex;
+    gap: 10px;
+}
+.linhas_musica img:hover{
+    width: 220px;
+    height: 220px;
+    border-radius: 7px;
+    transition:500ms;
+    
+}
+
