@@ -18,39 +18,65 @@
 }
 .nav {
     grid-column: 1/2;
+    overflow: hidden;
+    
     
 }
 #nav-1{
+    margin: 0;
     padding: 3%;
-    height: 100%;
     display: flex;
     list-style: none;
     justify-content: space-between;
     align-items: center;
     background-color: #000000;
     color: white;
+    
 }
 #nav-1 #inicio{
-    gap: 100%;
 } 
 #nav-1 #casa{
+    display: flex;
+    justify-content: center;
     
+    
+}
+#nav-1 #casa img{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+#teste{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+#lupa{
+    position: absolute;
+    right: 84%;
+}
+.bloco i{
+    
+
+}
+.bloco input{
+    padding-left: 40px;
+
 }
 .bloco{
     display: flex;
-    gap: 65%;
-    align-items: center;
-
-}
-.bloco i{
-    width: 40px;
-    height: auto;
 }
 #login {
     
+
     
     
 }
+
 #login-1{
     background-color: white;
     border-radius: 25px ;
